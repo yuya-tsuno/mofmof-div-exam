@@ -12,21 +12,21 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :name %>
+    <%= form.label :name, "駅名" %>
     <%= form.text_field :name %>
   </div>
 
   <div class="field">
-    <%= form.label :line %>
+    <%= form.label :line, "路線名" %>
     <%= form.text_field :line %>
   </div>
 
   <div class="field">
-    <%= form.label :time %>
+    <%= form.label :time, "徒歩分数" %>
     <%= form.number_field :time %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "登録する" %>
   </div>
 <% end %>
