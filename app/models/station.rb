@@ -1,5 +1,5 @@
 class Station < ApplicationRecord
-  belongs_to :property
+  belongs_to :property, inverse_of: :stations
 
   validates :name, presence: true
   validates :line, presence: true
